@@ -1,0 +1,11 @@
+Hooks for lbfgsb for J.
+Pretty much works the same as lbfgs (which I shamelessly copied the J code for), except the return
+values are different, and it requires a different sized workspace. lbfgsb allows for box constraints,
+and so it is very much more useful than the unconstrained lbfgs optimization.
+
+Maybe I'll eventually write some convenience wrappers for this, if I have a need for them.
+
+
+I've included the original driver examples in fortran, in case folks want to try different kinds 
+of searches or particularly like Fortran. 
+
